@@ -15,8 +15,6 @@ import java.util.List;
 
 public class MemberDAO {
 
-    String now = null;
-
     public MemberVO getMembers(String id, String pwd) throws Exception{
 
         String sql = "select * from mvc_member " +
