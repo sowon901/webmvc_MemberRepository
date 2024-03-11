@@ -29,7 +29,7 @@
 </head>
 <body>
     <c:if test="${param.result == 'error'}">
-        <span hidden="hidden" style= "color: red" >
+        <span style= "color: black" >
             <h1>로그인 에러입니다. 다시 시도하세요</h1>
         </span>
     </c:if>

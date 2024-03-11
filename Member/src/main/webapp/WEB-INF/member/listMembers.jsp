@@ -15,13 +15,18 @@
             text-align:center;
         }
 
-        td{
+
+        div {
+            align-content: center;
             text-align: center;
         }
+
+
     </style>
 </head>
 <body>
     <h1><b>회원정보</b></h1>
+    <div>
     <table border = "1">
         <tr bgcolor="#a9a9a9">
             <td>아이디</td>
@@ -48,7 +53,7 @@
             </ul>
         </tr>
     </table>
-
+    </div>
     <div align = "center">
         <p><a href="/member/addMember.do">회원 가입하기</a></p>
     </div>

@@ -17,22 +17,6 @@ public class MemberDAO {
 
     String now = null;
 
-    public String time() throws Exception{
-
-        String sql = "select now()";
-
-        @Cleanup
-        Connection con = ConnectionUtil.Instance.getConnection();
-        @Cleanup
-        PreparedStatement ps = con.prepareStatement(sql);
-        @Cleanup
-        ResultSet rs = ps.executeQuery();
-        rs.next();
-        now = rs.getString(1);
-
-        return now;
-    }
-
     public MemberVO getMembers(String id, String pwd) throws Exception{
 
         String sql = "select * from mvc_member " +
